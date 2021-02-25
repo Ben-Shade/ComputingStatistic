@@ -23,31 +23,37 @@ public class Loan
                 this.numLenders = numLenders;
    }
    
+   //Joseph Hall, retrieves private variable ID.
    public int getID()
    {
        return this.ID;
    }
    
+   //Joseph Hall, retrieves private variable loanAmount.
    public double getLoanAmount()
    {
        return this.loanAmount;
    }
    
+   //Joseph Hall, retrieves private variable country.
    public String getCountry()
    {
        return this.country;
    }
    
+   //Joseph Hall, changes private variable ID.
    public void setID(int ID)
    {
        this.ID = ID;
    }  
    
+   //Joseph Hall, changes private variable daysToFund.
    public void setDaysToFund(int daysToFund)
    {
        this.daysToFund = daysToFund;
    }    
    
+   //Joseph Hall, changes private variable numLenders.
    public void setNumLenders(int numLenders)
    {
        this.numLenders = numLenders;
