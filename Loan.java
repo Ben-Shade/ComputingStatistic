@@ -38,5 +38,19 @@ public class Loan
        return this.country;
    }
    
-    
+   public void setID(int ID)
+   {
+       this.ID = ID;
+   }  
+   
+   public void setDaysToFund(int daysToFund)
+   {
+       this.daysToFund = daysToFund;
+   }    
+   
+   public void setNumLenders(int numLenders)
+   {
+       this.numLenders = numLenders;
+   }   
+ 
 }

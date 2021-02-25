@@ -9,8 +9,8 @@ public class LoanTester {
 //       System.out.println(testOne);  //tests toString
 //       System.out.println("ID: 12345 loan amount: 280.0 country: Japan days to fund: 5 num lenders: 8");  //validates toString test
       
-//       testOne.setID(54321);
-//       System.out.println(testOne.getID() + " == 54321");
+       testOne.setID(54321);
+       System.out.println(testOne.getID() + " == 54321");
 //       testOne.setLoanAmount(450.00);
 //       System.out.println(testOne.getLoanAmount() + " == 450.0");
 //       testOne.setCountry("USA");
