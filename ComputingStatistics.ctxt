@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ComputingStatistics
+comment1.params=
+comment1.target=ComputingStatistics()
+comment1.text=\r\n\ Creates\ a\ new\ ComputingStatistics\ object\ with\ an\ empty\ ArrayList\ \r\n
+comment2.params=
+comment2.target=double\ totalAmount()
+comment2.text=\r\n\ Calclates\ the\ total\ amount\ funded\ from\ all\ of\ the\ loans\ in\ the\ file.\r\n\ @return\ the\ total\ loan\ amount.\r\n
+numComments=3

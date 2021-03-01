@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Loan
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Loan\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=ID\ loanAmount\ country\ daysToFund\ numLenders
+comment1.target=Loan(int,\ double,\ java.lang.String,\ int,\ int)
+comment10.params=LoanAmount
+comment10.target=void\ setLoanAmount(int)
+comment11.params=country
+comment11.target=void\ setcountry(java.lang.String)
+comment2.params=
+comment2.target=int\ getNumLenders()
+comment3.params=
+comment3.target=int\ getDaysToFund()
+comment4.params=
+comment4.target=int\ getID()
+comment5.params=
+comment5.target=double\ getLoanAmount()
+comment6.params=
+comment6.target=java.lang.String\ getCountry()
+comment7.params=ID
+comment7.target=void\ setID(int)
+comment8.params=daysToFund
+comment8.target=void\ setDaysToFund(int)
+comment9.params=numLenders
+comment9.target=void\ setNumLenders(int)
+numComments=12
