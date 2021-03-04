@@ -8,14 +8,14 @@
 public class Loan
 {
     private int ID;
-    private double LoanAmount;
+    private double loanAmount;
     private String country;
     private int daysToFund;
     private int numLenders;
     public Loan(int ID, double loanAmount, String country, int daysToFund, int numLenders)
     {
         this.ID = ID;
-        this.LoanAmount = LoanAmount;
+        this.loanAmount = loanAmount;
         this.country = country;
         this.daysToFund = daysToFund;
         this.numLenders = numLenders;
@@ -32,7 +32,7 @@ public class Loan
     }
     public double getLoanAmount()
     {
-        return this.LoanAmount;
+        return this.loanAmount;
     }
     public String getCountry()
     {
@@ -51,11 +51,11 @@ public class Loan
     {
         this.numLenders = numLenders;
     }   
-    public void setLoanAmount(int LoanAmount)
+    public void setLoanAmount(double LoanAmount)
     {
-        this.LoanAmount = LoanAmount;
+        this.loanAmount = LoanAmount;
     }
-    public void setcountry(String country)
+    public void setCountry(String country)
     {
         this.country = country;
     }
