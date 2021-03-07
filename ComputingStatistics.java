@@ -62,7 +62,6 @@ public class ComputingStatistics {
        }
        return largest;
    }
-<<<<<<< HEAD
    public double smallestLoan(){
        double smallest = 0.0;
        Loan loan;
@@ -89,7 +88,6 @@ public class ComputingStatistics {
         }
         return country;
     }
-=======
    //Calculates the average amount of days to fund all of the loans.
    public double avgDaysToFund()
    {
@@ -121,9 +119,4 @@ public class ComputingStatistics {
        }
        return largest;
    }
-   
-
-
-
->>>>>>> 042c0eac8641ee6e6fb0e937c0bcc52dcf57f463
 }
