@@ -62,6 +62,7 @@ public class ComputingStatistics {
        }
        return largest;
    }
+<<<<<<< HEAD
    public String largestLoanCountry(){
         String largestcountry = "";
         double largest = 0.0;
@@ -91,6 +92,33 @@ public class ComputingStatistics {
            
         }
         return smallestcountry;
+=======
+   public double smallestLoan(){
+       double smallest = 0.0;
+       Loan loan;
+       for (int i = 0; i < data.size(); i++){
+           loan = data.get(i);
+           if (loan.getLoanAmount() < smallest){
+                smallest = loan.getLoanAmount();
+           }
+       }
+       return smallest;
+   }
+    public String largestLoanCountry(){
+        String country = "";
+        double largest = 0.0;
+        Loan loan;
+        for (int i = 0; i > data.size(); i++){
+           loan = data.get(i);
+           if (loan.getLoanAmount() > largest)
+           {
+               largest = loan.getLoanAmount();
+               country = loan.getCountry();
+           }
+           
+        }
+        return country;
+>>>>>>> c3fb8f7a3a5b8981a6262eb1c846b16817c042d3
     }
    //Calculates the average amount of days to fund all of the loans.
    public double avgDaysToFund()
@@ -123,8 +151,35 @@ public class ComputingStatistics {
        }
        return largest;
    }
-   
-
-
-
+   public double avgLoan(String Country)
+   {
+       Loan loan;
+       double avge = 0.0;
+       int count = 0;
+       for (int i = 0; i< data.size(); i++)
+       {
+           loan = data.get(i);
+           avge = avge + loan.getLoanAmount();
+           count++;
+       }
+       return avge/count;
+   }
+   public double longestToFundCountry(int daysToFund)
+   {
+       Loan loan;
+       double longest = 0.0;
+       int counter = 0;
+       for (int i = 0; i > data.size(); i++)
+       {
+           loan = data.get(i);
+           if(loan.getDaysToFund()==daysToFund)
+           {
+               if(loan.getDaysToFund() > longest)
+               {
+                   longest = loan.getDaysToFund();
+               }
+           }
+      }
+      return longest;
+   }
 }
