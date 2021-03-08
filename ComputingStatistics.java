@@ -119,4 +119,35 @@ public class ComputingStatistics {
        }
        return largest;
    }
+   public double avgLoan(String Country)
+   {
+       Loan loan;
+       double avge = 0.0;
+       int count = 0;
+       for (int i = 0; i< data.size(); i++)
+       {
+           loan = data.get(i);
+           avge = avge + loan.getLoanAmount();
+           count++;
+       }
+       return avge/count;
+   }
+   public double longestToFundCountry(int daysToFund)
+   {
+       Loan loan;
+       double longest = 0.0;
+       int counter = 0;
+       for (int i = 0; i > data.size(); i++)
+       {
+           loan = data.get(i);
+           if(loan.getDaysToFund()==daysToFund)
+           {
+               if(loan.getDaysToFund() > longest)
+               {
+                   longest = loan.getDaysToFund();
+               }
+           }
+      }
+      return longest;
+   }
 }
