@@ -107,18 +107,22 @@ public class ComputingStatistics {
    }
 
    //Calculates the average amount of days to fund all of the loans.
-   public double avgDaysToFund()
+   public int avgDaysToFund()
    {
        Loan loan;
-       double average = 0.0;
+       double average = 0;
+       int secondAverage = 0;
        int counter = 0;
-       for (int i = 0; i< data.size(); i++)
+       for (int i = 0; i < data.size(); i++)
        {
            loan = data.get(i);
-           average += loan.getDaysToFund()/60/60/24;
+           double seconds = loan.getDaysToFund();
+           double days = seconds/86400 + 1;
+           average += days;
            counter++;
        }
-       return average/counter;
+       secondAverage = (int)(average);
+       return secondAverage/counter;
    }
    public double largestLoanC(String Country)
    {
