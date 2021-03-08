@@ -62,6 +62,36 @@ public class ComputingStatistics {
        }
        return largest;
    }
+   public String largestLoanCountry(){
+        String largestcountry = "";
+        double largest = 0.0;
+        Loan loan;
+        for (int i = 0; i > data.size(); i++){
+           loan = data.get(i);
+           if (loan.getLoanAmount() > largest)
+           {
+               largest = loan.getLoanAmount();
+               largestcountry = loan.getCountry();
+           }
+           
+        }
+        return largestcountry;
+    }
+   public String smallestLoanCountry(){
+        String smallestcountry = "";
+        double smallest = 100000000.0;
+        Loan loan;
+        for (int i = 0; i > data.size(); i++){
+           loan = data.get(i);
+           if (loan.getLoanAmount() < smallest)
+           {
+               smallest = loan.getLoanAmount();
+               smallestcountry = loan.getCountry();
+           }
+           
+        }
+        return smallestcountry;
+    }
    //Calculates the average amount of days to fund all of the loans.
    public double avgDaysToFund()
    {
